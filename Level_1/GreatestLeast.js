@@ -1,3 +1,7 @@
+/*
+문제 이름 : 최대공약수와 최소공배수
+링크 : https://programmers.co.kr/learn/courses/30/lessons/12940
+ */
 function solution(n, m) {
   var answer = [];
   //최대공약수 : 유클리드 호제법
