@@ -11,3 +11,19 @@ function descendingInt(n) {
 
   return Number(answer);
 }
+
+//문자보다 숫자로 진행하는것이 처리속도가 더 빠르다
+/*
+function solution(n) {
+    //숫자가 분명히 더 빠름
+    var nums =[];
+    do{
+        nums.push(n%10);
+        n=Math.floor(n/10);
+    } while(n>0)
+
+    return nums.sort((a,b)=>b-a).join('')*1;
+    //문자는 느림
+    return (n+"").split('').sort((a,b)=>b-a).join('')*1;
+}
+ */
