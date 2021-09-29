@@ -4,7 +4,6 @@
  */
 
 function stringDescSort(s) {
-  var answer = "";
-
-  return answer;
+  const cutS = s.split("").sort().reverse().join("");
+  return cutS;
 }
