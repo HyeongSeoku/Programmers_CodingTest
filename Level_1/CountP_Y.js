@@ -16,7 +16,6 @@ function CountP_Y(s) {
       pCount++;
     } else if (sArr[i] === "y") {
       yCount++;
-      console.log(sArr[i]);
     }
   }
   if (pCount !== yCount) {
@@ -24,3 +23,9 @@ function CountP_Y(s) {
   }
   return answer;
 }
+
+/*
+function numPY(s) {
+  return s.match(/p/ig).length == s.match(/y/ig).length;
+}
+*/
