@@ -24,6 +24,9 @@ function eratosthenes(n) {
   var primeNum = arr.filter((i) => i != 0);
   //소수 개수 구하는 과정
   var primeLength = primeNum.length;
+  console.log("소수:", primeNum);
   console.log("소수의 개수 :", primeLength);
   return primeNum;
 }
+
+eratosthenes(15);
