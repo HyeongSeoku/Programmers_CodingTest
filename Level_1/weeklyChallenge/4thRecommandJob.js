@@ -20,3 +20,26 @@ function recommandJob() {
 }
 
 //다른 풀이
+function solution(table, languages, preference) {
+  var answer = "",
+    max = 0;
+
+  table.forEach((row) => {
+    const [category, ...ranks] = row.split(" ");
+    let sum = 0;
+    for (let i = 0; i < languages.length; i++) {
+      const rank = ranks.findIndex((lang) => lang === languages[i]);
+      if (rank === -1) continue;
+      sum += (ranks.length - rank) * preference[i];
+    }
+
+    if (max < sum) {
+      max = sum;
+      answer = category;
+    } else if (max === sum) {
+      answer = [answer, category].sort()[0];
+    }
+  });
+
+  return answer;
+}
